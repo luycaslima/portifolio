@@ -53,7 +53,7 @@ export default {
   background-repeat: no-repeat;
   background-position: bottom left;
   position: absolute;
-  padding: 30px;
+  padding: 10px 0px;
   left: 0;
   bottom: 0;
   width: 100%;

@@ -22,7 +22,6 @@ export default {
 
 
 #app {
-  
   font-family: Avenir, Helvetica, Arial,'Roboto Condensed',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,7 +40,14 @@ body {
   padding-bottom: 220px;
   margin: 100px 0px 0px 0px;
   min-height: 100vh;
+  
 }
+body p{
+  font-family: 'Roboto Condensed', cursive;
+  
+
+}
+
 
 #nav {
   padding: 30px;
@@ -57,6 +63,7 @@ body {
 }
 
 .title-page h1{
+  font-family: "Righteous", cursive;
   color:  #2c3e50;
 }
 
