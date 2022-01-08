@@ -13,6 +13,7 @@
           Sou estudante de Ciência da Computação. Desenvolvedor frontend e de
           jogos.
         </p>
+        <p> <strong>Email:</strong> luycaslima@gmail.com</p>
       </div>
       <div id="description-image">
         <img src="../assets/profile_pic.svg" alt="profile image" />
@@ -97,10 +98,6 @@ h2 {
   font-size: 22px;
 }
 
-.title-page img {
-  width: 75%;
-  height: 75%;
-}
 
 .title-page {
   margin: 12px;
@@ -125,7 +122,7 @@ h2 {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 840px) {
   .name-description {
     border-style: solid;
     border-width: 5px;

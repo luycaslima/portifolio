@@ -1,4 +1,6 @@
 <template>
+    <!-- TODO criar go up button -->
+
     <button id= "go-up-button" v-on:click="GoUp()" ><img src="../assets/GoUp_button.svg" alt="go up image"> </button>
 </template>
 

@@ -39,7 +39,7 @@ body {
   background-color:  #f7f7ff;
   padding-bottom: 220px;
   margin: 100px 0px 0px 0px;
-  min-height: 100vh;
+  min-height: 70vh;
   
 }
 body p{
