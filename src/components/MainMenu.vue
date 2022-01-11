@@ -2,6 +2,7 @@
   <!--TODO  tirar a pagina home ( remover hiper link do logo central)
    e tornar a aba projects a HOME -->
   <!-- TODO Melhorar a animação ao menu fexar -->
+  <!-- TODO Trocar o botao de menu do mobile para um x ao abrir -->
   <nav class="topbar">
     <div id="mobile-menu-top-bar">
       <router-link to="/">
@@ -14,19 +15,32 @@
 
     <div id="content">
       <ul id="menu">
+        <img
+          id="mobile-line"
+          name="top-line"
+          src="../assets/title_line.svg"
+          alt="line"
+        />
+
         <li>
-          <router-link to="/projects" v-on:click="ResetMenu()" tag="li"
+          <router-link to="/projects" v-on:click="ResetMenu()"
             >PROJECTS</router-link
           >
         </li>
-        <li><router-link to="/games" v-on:click="ResetMenu()">GAMES</router-link></li>
+        <li>
+          <router-link to="/games" v-on:click="ResetMenu()">GAMES</router-link>
+        </li>
         <li id="desktop-btn">
           <router-link to="/">
             <img src="../assets/l22l_logo.svg" alt="l22l-logo"
           /></router-link>
         </li>
-        <li><router-link to="/blog" v-on:click="ResetMenu()">BLOG</router-link></li>
-        <li><router-link to="/about" v-on:click="ResetMenu()">ABOUT</router-link></li>
+        <li>
+          <router-link to="/blog" v-on:click="ResetMenu()">BLOG</router-link>
+        </li>
+        <li>
+          <router-link to="/about" v-on:click="ResetMenu()">ABOUT</router-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -93,6 +107,11 @@ ul {
   margin: auto 30px;
 }
 
+#mobile-line {
+  padding-top: 28px;
+  padding-bottom: 20vh;
+}
+
 #mobile-menu-top-bar img {
   width: 50px;
   height: 50px;
@@ -127,7 +146,7 @@ a:visited {
   font-size: 20px;
   line-height: 85%;
   letter-spacing: 0.1em;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 #content {
   height: 100%;
@@ -154,7 +173,7 @@ a:visited {
   width: 100%;
   background: #f7f7ff;
   height: calc(100vh - 80px);
-  padding-top: 25vh;
+  /* padding-top: 25vh;*/
   visibility: visible;
 }
 
@@ -171,15 +190,12 @@ a:visited {
   color: #fe5f55;
   transition: 0.3s;
 }
-#content img {
-  height: 50px;
-  width: 50px;
-}
 
 @media only screen and (min-width: 840px) {
-  #btn-mobile {
+  #mobile-line {
     display: none;
   }
+
   #desktop-btn {
     display: flex;
   }
@@ -194,6 +210,10 @@ a:visited {
     height: initial;
     visibility: visible;
     overflow: hidden;
+  }
+  #content img {
+    height: 50px;
+    width: 50px;
   }
 
   #content {
