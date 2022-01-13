@@ -38,12 +38,11 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #f7f7ff;
-  padding-bottom: 220px;
-  margin: 100px 0px 0px 0px;
-  min-height: 70vh;
-
-  
+  padding-bottom: 222px;
+  margin: 108px 0px 0px 0px;
+  min-height: 65vh;
 }
+
 body p {
   font-family: "Roboto Condensed", cursive;
 }
@@ -61,6 +60,14 @@ body p {
 }
 .page p {
   text-align: justify;
+}
+
+h2 {
+  font-family: "Righteous", cursive;
+  color: #001021;
+  margin: 20px 0 25px;
+  font-size: 30px;
+  letter-spacing: 3px;
 }
 
 #nav {

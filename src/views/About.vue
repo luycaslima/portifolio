@@ -22,24 +22,25 @@
     <section class="skills">
       <h2>Skills</h2>
       <div class="skill-container">
+        <!--TODO rever se tiro a rodada das cartas -->
         <Card :title="frontEnd.title" :items="frontEnd.items" />
         <Card :title="gameDev.title" :items="gameDev.items" />
         <Card :title="ferramentas.title" :items="ferramentas.items" />
       </div>
     </section>
-    <section class="qualifications">
-      <h2>Qualificações</h2>
-      <div></div>
-    </section>
+    <Qualifications />
   </div>
 </template>
 
 <script>
 import Card from "../components/Card.vue";
+import Qualifications from "../components/Qualifications.vue"
+
 export default {
   name: "About",
   components: {
     Card,
+    Qualifications,
   },
   data() {
     return {
@@ -78,13 +79,7 @@ export default {
   font-size: 18px;
 }
 
-h2 {
-  font-family: "Righteous", cursive;
-  color: #001021;
-  margin: 10px 0;
-  font-size: 28px;
-  letter-spacing: 3px;
-}
+
 
 h3 {
   font-family: "Righteous", cursive;
@@ -111,7 +106,9 @@ h3 {
 .skills {
   padding: 10px;
   align-items: center;
+  margin: 40px 0;
 }
+
 .skills p {
   padding: 15px;
 }

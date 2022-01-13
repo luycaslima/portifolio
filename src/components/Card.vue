@@ -67,6 +67,7 @@ export default {
 .card {
   width: 250px;
   height: 360px;
+  zoom: 1.5;
   margin: 10px;
   perspective: 1000px;
 }
@@ -177,5 +178,11 @@ export default {
   position: absolute;
   right: 15px;
   bottom: 10px;
+}
+
+@media only screen and (min-width: 840px) {
+  .card{
+    zoom: 1;
+  }
 }
 </style>
