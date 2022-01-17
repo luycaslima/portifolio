@@ -4,7 +4,7 @@
     <div class="qualification-container">
       <div class="qualification-tabs">
         <div class="qualification-button">
-          <img src="../assets/formacao_icon_click.svg" alt="formation icon" />
+          <img src="../assets/formacao_icon_click.svg" alt="formation icon">
           <h3>Formação</h3>
         </div>
         <!--
@@ -17,35 +17,35 @@
         <div class="qualification-content">
           <div class="qualification-data">
             <div>
-              <h3 class="qualification-title">Engenharia da Computação</h3>
-              <span class="qualification-subtitle"
-                >Graduação na Universidade Federal de Sergipe</span
-              >
+              <h3 class="qualification-title">
+                Engenharia da Computação
+              </h3>
+              <span class="qualification-subtitle">Graduação na Universidade Federal de Sergipe</span>
               <div class="qualification-calendar">
-                <img src="../assets/calendar_icon.svg" alt="calendar icon" />
+                <img src="../assets/calendar_icon.svg" alt="calendar icon">
                 Janeiro 2014 - 2019
               </div>
             </div>
             <div>
               <span class="qualification-rounder"> <img src="" alt=""></span>
-              <span class="qualification-line"></span>
+              <span class="qualification-line" />
             </div>
           </div>
           <!-- Qualificacao 1 -->
           <div class="qualification-data">
-            <div></div>
+            <div />
             <div>
-              <span class="qualification-rounder"></span>
-              <span class="qualification-line"></span>
+              <span class="qualification-rounder" />
+              <span class="qualification-line" />
             </div>
 
             <div>
-              <h3 class="qualification-title">Ciência da Computação</h3>
-              <span class="qualification-subtitle"
-                >Graduação na Universidade Federal de Sergipe</span
-              >
+              <h3 class="qualification-title">
+                Ciência da Computação
+              </h3>
+              <span class="qualification-subtitle">Graduação na Universidade Federal de Sergipe</span>
               <div class="qualification-calendar">
-                <img src="../assets/calendar_icon.svg" alt="calendar icon" />
+                <img src="../assets/calendar_icon.svg" alt="calendar icon">
                 Janeiro 2019 - 2022 (Transferência Interna)
               </div>
             </div>
@@ -55,17 +55,15 @@
               <h3 class="qualification-title">
                 Mestrando em Ciência da Computação
               </h3>
-              <span class="qualification-subtitle"
-                >Universidade Federal de Sergipe</span
-              >
+              <span class="qualification-subtitle">Universidade Federal de Sergipe</span>
               <div class="qualification-calendar">
-                <img src="../assets/calendar_icon.svg" alt="calendar icon" />
+                <img src="../assets/calendar_icon.svg" alt="calendar icon">
                 Dezembro 2022
               </div>
             </div>
 
             <div>
-              <span class="qualification-rounder"></span>
+              <span class="qualification-rounder" />
               <!-- <span class="qualification-line"></span> -->
             </div>
           </div>
@@ -76,12 +74,10 @@
 </template>
 
 <script>
-//https://www.youtube.com/watch?v=27JtRAI3QO8&t=353s
+// https://www.youtube.com/watch?v=27JtRAI3QO8&t=353s
 export default {
-
-
-  name: "Qualifications",
-};
+  name: 'QualificationsModule'
+}
 </script>
 
 <style scoped>
@@ -106,7 +102,7 @@ export default {
 .qualification-button:hover h3 {
     color: #fe5f55;
     transition: 0.3s;
-}   
+}
 .qualification-button:hover img{
     filter: invert(50%) sepia(30%) saturate(3514%) hue-rotate(328deg) brightness(104%) contrast(99%);
 }*/
@@ -123,6 +119,7 @@ export default {
   font-size: 18px;
   color: #001021;
   margin: 5px 0;
+  text-align: left;
 }
 
 .qualification-subtitle {
@@ -163,7 +160,7 @@ export default {
   height: 83%;
   background-color: #bdd5ea;
   transform: translate(8px,-2px);
-  
+
 }
 
 h3 {

@@ -1,33 +1,47 @@
 <template>
-  <MainMenu />
   <div class="main">
-    <router-view></router-view>
+    <MainMenu />
+    <Nuxt />
+    <GoUpButton />
+    <PageFooter />
   </div>
-  <GoUpButton/>
-  <Footer />
 </template>
 
 <script>
-import MainMenu from "@/components/MainMenu.vue";
-import Footer from "@/components/Footer.vue";
-import GoUpButton from "@/components/GoUpButton.vue"
-
+// https://stackoverflow.com/questions/53426648/how-to-define-route-in-nuxt-js
+// Para multiplas linguas no site
 export default {
-  components: { MainMenu, Footer, GoUpButton },
-};
+  layout: 'default'
+}
 </script>
-
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+* {
+  font-family: "Roboto Condensed", cursive;
+}
 
-#app {
-  font-family: Avenir, Helvetica, Arial, "Roboto Condensed", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
+  font-family: "Righteous", cursive;
+}
+
+h2 {
+  font-family: "Righteous", cursive;
+  color: #001021;
+  margin: 10px 0;
+  font-size: 28px;
+  letter-spacing: 3px;
   text-align: center;
-  color: #2c3e50;
+}
+
+h3 {
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+  color: #495867;
+  letter-spacing: 3px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .main {
@@ -38,13 +52,9 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #f7f7ff;
-  padding-bottom: 222px;
-  margin: 108px 0px 0px 0px;
-  min-height: 65vh;
-}
-
-body p {
-  font-family: "Roboto Condensed", cursive;
+  padding-bottom: 200px;
+  margin: 80px 0px 0px 0px;
+  min-height: 70vh;
 }
 
 .page {
@@ -62,34 +72,13 @@ body p {
   text-align: justify;
 }
 
-h2 {
-  font-family: "Righteous", cursive;
-  color: #001021;
-  margin: 20px 0 25px;
-  font-size: 30px;
-  letter-spacing: 3px;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 .title-page h1 {
-  font-family: "Righteous", cursive;
   color: #2c3e50;
 }
 
 .title-page {
   margin: 10px 0;
+  text-align: center;
 }
 
 footer {
@@ -101,6 +90,20 @@ footer {
   position: absolute;
   width: 100%;
   overflow: hidden;
+}
+/* Titulo das paginas */
+.title-page {
+  margin: 12px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.title-page h1 {
+  font-family: "Righteous", cursive;
+  color: #001021;
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin: 10px;
 }
 
 /*Animation Fade in of the pages*/
@@ -149,9 +152,21 @@ footer {
   }
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (min-width: 840px) {
   .page p {
     text-align: center;
   }
+  .title-page img {
+    width: auto;
+    height: auto;
+  }
+  .title-page h1 {
+    margin: 20px;
+  }
+  .title-page {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
 </style>

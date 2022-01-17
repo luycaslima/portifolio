@@ -1,10 +1,10 @@
 <template>
-  <div class="card" v-on:click="CallFlipCard()">
+  <div class="card" @click="CallFlipCard()">
     <!-- TODO descobrir como  passar o path da imagem corretamente , Não colocar todo no root desse template que crasha querySelector-->
     <!-- tornar as cartas ajustaveis ao espaço da tela -->
     <div class="card-inner">
       <div class="card-face card-face--front">
-        <div class="card-face--front-border"></div>
+        <div class="card-face--front-border" />
       </div>
       <div class="card-face card-face--back">
         <div class="card_content">
@@ -13,7 +13,7 @@
               src="../assets/card_frontend_img.svg"
               alt="icon"
               class="card-img"
-            />
+            >
           </div>
           <div class="card_body">
             <div class="card_title">
@@ -25,7 +25,7 @@
               </li>
             </div>
             <div class="card-footer">
-              <img src="../assets/dot_simbol.svg" alt="dot-simbol" />
+              <img src="../assets/dot_simbol.svg" alt="dot-simbol">
             </div>
           </div>
         </div>
@@ -36,29 +36,28 @@
 
 <script>
 export default {
-  name: "Card",
+  name: 'Card',
   props: {
-    cardImg: String,
     title: { type: String, required: true },
-    items: { type: Array, required: true },
+    items: { type: Array, required: true }
   },
-  data() {
+  data () {
     return {
-      //items: ["HTML", "CSS", "JAVASCRIPT", "VUE.JS"],
-    };
+      // items: ["HTML", "CSS", "JAVASCRIPT", "VUE.JS"],
+    }
   },
   methods: {
-    Flip(card) {
-      card.classList.toggle("is-flipped");
+    Flip (card) {
+      card.classList.toggle('is-flipped')
     },
-    CallFlipCard() {
-      //Essa chamada pega o exatdo elemento no contexto interno desse componente
-      //https://blog.logrocket.com/getting-element-component-vue-queryselector/
-      const card = this.$el.querySelector(".card-inner");
-      card.addEventListener("click", this.Flip(card));
-    },
-  },
-};
+    CallFlipCard () {
+      // Essa chamada pega o exatdo elemento no contexto interno desse componente
+      // https://blog.logrocket.com/getting-element-component-vue-queryselector/
+      const card = this.$el.querySelector('.card-inner')
+      card.addEventListener('click', this.Flip(card))
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -67,7 +66,6 @@ export default {
 .card {
   width: 250px;
   height: 360px;
-  zoom: 1.5;
   margin: 10px;
   perspective: 1000px;
 }
@@ -178,11 +176,5 @@ export default {
   position: absolute;
   right: 15px;
   bottom: 10px;
-}
-
-@media only screen and (min-width: 840px) {
-  .card{
-    zoom: 1;
-  }
 }
 </style>

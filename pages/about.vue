@@ -1,9 +1,9 @@
 <template>
   <div class="page">
     <div class="title-page">
-      <img src="../assets/title_line.svg" alt="line" />
+      <img src="../assets/title_line.svg" alt="line">
       <h1>ABOUT</h1>
-      <img src="../assets/title_line.svg" alt="line" />
+      <img src="../assets/title_line.svg" alt="line">
     </div>
     <div class="name-description">
       <div class="description">
@@ -16,13 +16,12 @@
         <p><strong>Email:</strong> luycaslima@gmail.com</p>
       </div>
       <div id="description-image">
-        <img src="../assets/profile_pic.svg" alt="profile image" />
+        <img src="../assets/profile_pic.svg" alt="profile image">
       </div>
     </div>
     <section class="skills">
       <h2>Skills</h2>
       <div class="skill-container">
-        <!--TODO rever se tiro a rodada das cartas -->
         <Card :title="frontEnd.title" :items="frontEnd.items" />
         <Card :title="gameDev.title" :items="gameDev.items" />
         <Card :title="ferramentas.title" :items="ferramentas.items" />
@@ -33,36 +32,35 @@
 </template>
 
 <script>
-import Card from "../components/Card.vue";
-import Qualifications from "../components/Qualifications.vue"
-
+import Card from '../components/Card.vue'
+import Qualifications from '../components/Qualifications.vue'
 export default {
-  name: "About",
+  name: 'About',
   components: {
     Card,
-    Qualifications,
+    Qualifications
   },
-  data() {
+  data () {
     return {
       frontEnd: {
-        title: "Front-end",
-        image: "../assets/card_frontend_img.svg",
-        items: ["Html", "CSS", "Javascript", "Vue.js"],
+        title: 'Front-end',
+        image: '../assets/card_frontend_img.svg',
+        items: ['Html', 'CSS', 'Javascript', 'Vue.js']
       },
-      ferramentas: { title: "Ferramentas", items: ["Git", "Scrum"] },
+      ferramentas: { title: 'Ferramentas', items: ['Git', 'Scrum'] },
       gameDev: {
-        title: "Game-dev",
-        items: ["Unity", "Godot", "Rust", "C++/SDL"],
-      },
-    };
-  },
-};
+        title: 'Game-dev',
+        items: ['Unity', 'Godot', 'Rust', 'C++/SDL']
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
 .name-description {
   padding: 10px;
-  align-items: center;
+  text-align:center;
   margin: auto 20px;
 }
 
@@ -79,36 +77,10 @@ export default {
   font-size: 18px;
 }
 
-
-
-h3 {
-  font-family: "Righteous", cursive;
-  font-size: 20px;
-  color: #495867;
-  letter-spacing: 3px;
-  margin: 10px 0;
-}
-
-.title-page {
-  margin: 12px;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-.title-page h1 {
-  font-family: "Righteous", cursive;
-  color: #001021;
-  font-size: 40px;
-  letter-spacing: 5px;
-  margin: 10px;
-}
-
 .skills {
   padding: 10px;
   align-items: center;
-  margin: 40px 0;
 }
-
 .skills p {
   padding: 15px;
 }
@@ -136,6 +108,10 @@ h3 {
     border-radius: 6px;
   }
 
+  .description h3{
+    text-align: left;
+  }
+
   .description {
     padding: 15px 20px;
     text-align: left;
@@ -148,17 +124,7 @@ h3 {
   .skills {
     padding: 10px 0;
   }
-  .title-page img {
-    width: auto;
-    height: auto;
-  }
-  .title-page h1 {
-    margin: 20px;
-  }
-  .title-page {
-    display: flex;
-    justify-content: space-between;
-  }
+
   #description-image {
     padding: 20px;
   }
