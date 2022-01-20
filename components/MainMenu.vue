@@ -3,19 +3,20 @@
     e tornar a aba projects a HOME-->
   <!-- TODO Melhorar a animação ao menu fexar -->
   <!-- TODO Trocar o botao de menu do mobile para um x ao abrir -->
+  <!-- TODO migrar as imagens mais usadas para pasta static-->
   <nav class="topbar">
     <div id="mobile-menu-top-bar">
       <NuxtLink to="/">
-        <img src="../assets/l22l_logo.svg" alt="l22l-logo">
+        <img src="/l22l_logo.svg" alt="l22l-logo">
       </NuxtLink>
       <button id="btn-mobile" @click="OpenMenu()">
-        <img src="../assets/MobileMenu_Button.svg" alt="mobile button">
+        <img src="/MobileMenu_Button.svg" alt="mobile button">
       </button>
     </div>
 
     <div id="content">
       <ul id="menu">
-        <img id="mobile-line" name="top-line" src="../assets/title_line.svg" alt="line">
+        <img id="mobile-line" name="top-line" src="/title_line.svg" alt="line">
 
         <li>
           <NuxtLink to="/projects" @click="ResetMenu()">
@@ -29,7 +30,7 @@
         </li>
         <li id="desktop-btn">
           <NuxtLink to="/">
-            <img src="../assets/l22l_logo.svg" alt="l22l-logo">
+            <img src="/l22l_logo.svg" alt="l22l-logo">
           </NuxtLink>
         </li>
         <li>

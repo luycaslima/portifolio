@@ -1,9 +1,9 @@
 <template>
   <div class="page">
     <div class="title-page">
-      <img src="../assets/title_line.svg" alt="line">
+      <img src="../static/title_line.svg" alt="line">
       <h1>ABOUT</h1>
-      <img src="../assets/title_line.svg" alt="line">
+      <img src="../static/title_line.svg" alt="line">
     </div>
     <div class="name-description">
       <div class="description">
@@ -34,6 +34,8 @@
 <script>
 import Card from '../components/Card.vue'
 import Qualifications from '../components/Qualifications.vue'
+
+// TODO: Adaptar o grid da lista de jogos para as cartas no about
 export default {
   name: 'About',
   components: {
@@ -45,7 +47,7 @@ export default {
       frontEnd: {
         title: 'Front-end',
         image: '../assets/card_frontend_img.svg',
-        items: ['Html', 'CSS', 'Javascript', 'Vue.js']
+        items: ['Html', 'CSS', 'Javascript', 'Vue.js', 'Nuxt.js']
       },
       ferramentas: { title: 'Ferramentas', items: ['Git', 'Scrum'] },
       gameDev: {
@@ -113,7 +115,7 @@ export default {
   }
 
   .description {
-    padding: 15px 20px;
+    padding: 45px 20px;
     text-align: left;
   }
 

@@ -52,8 +52,8 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #f7f7ff;
-  padding-bottom: 200px;
-  margin: 80px 0px 0px 0px;
+  padding-bottom: 180px;
+  margin: 100px 0px 0px 0px;
   min-height: 70vh;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .title-page {
-  margin: 10px 0;
+  margin: 5px 0;
   text-align: center;
 }
 

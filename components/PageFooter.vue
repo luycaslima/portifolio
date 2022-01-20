@@ -4,13 +4,13 @@
       <client-only>
         <table>
           <tr>
-            <td><img id="line" src="../assets/line.svg" alt="line"></td>
+            <td><img id="line" src="/line.svg" alt="line"></td>
           </tr>
           <tr>
             <div id="buttons">
-              <a href="https://github.com/luycaslima" target="_blank"><img src="../assets/social/github.svg" alt="github"></a>
-              <a href="https://www.instagram.com/luycaslima/" target="_blank"><img src="../assets/social/instagram.svg" alt="instagram"></a>
-              <a href="https://github.com/luycaslima" target="_blank"><img src="../assets/social/twitter.svg" alt="twitter"></a>
+              <a href="https://github.com/luycaslima" target="_blank"><img src="/social/github.svg" alt="github"></a>
+              <a href="https://www.instagram.com/luycaslima/" target="_blank"><img src="/social/instagram.svg" alt="instagram"></a>
+              <a href="https://github.com/luycaslima" target="_blank"><img src="/social/twitter.svg" alt="twitter"></a>
             </div>
           </tr>
         </table>

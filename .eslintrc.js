@@ -19,5 +19,13 @@ module.exports = {
     'vue/multi-word-component-names': ['error', {
       ignores: ['About', 'Games', 'Projects', 'Posts', 'Card', 'default']
     }]
-  }
+  },
+  overrides: [
+    {
+      files: ['src/views/**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 0
+      }
+    }
+  ]
 }

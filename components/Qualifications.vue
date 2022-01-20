@@ -4,7 +4,7 @@
     <div class="qualification-container">
       <div class="qualification-tabs">
         <div class="qualification-button">
-          <img src="../assets/formacao_icon_click.svg" alt="formation icon">
+          <img src="/formacao_icon_click.svg" alt="formation icon">
           <h3>Formação</h3>
         </div>
         <!--
@@ -22,7 +22,7 @@
               </h3>
               <span class="qualification-subtitle">Graduação na Universidade Federal de Sergipe</span>
               <div class="qualification-calendar">
-                <img src="../assets/calendar_icon.svg" alt="calendar icon">
+                <img src="/calendar_icon.svg" alt="calendar icon">
                 Janeiro 2014 - 2019
               </div>
             </div>
@@ -45,7 +45,7 @@
               </h3>
               <span class="qualification-subtitle">Graduação na Universidade Federal de Sergipe</span>
               <div class="qualification-calendar">
-                <img src="../assets/calendar_icon.svg" alt="calendar icon">
+                <img src="/calendar_icon.svg" alt="calendar icon">
                 Janeiro 2019 - 2022 (Transferência Interna)
               </div>
             </div>
@@ -57,7 +57,7 @@
               </h3>
               <span class="qualification-subtitle">Universidade Federal de Sergipe</span>
               <div class="qualification-calendar">
-                <img src="../assets/calendar_icon.svg" alt="calendar icon">
+                <img src="/calendar_icon.svg" alt="calendar icon">
                 Dezembro 2022
               </div>
             </div>
@@ -149,7 +149,7 @@ export default {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("../assets/dot_simbol.svg");
+  background-image: url("/dot_simbol.svg");
   background-repeat: no-repeat;
   background-position: center;
 

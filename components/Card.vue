@@ -25,7 +25,7 @@
               </li>
             </div>
             <div class="card-footer">
-              <img src="../assets/dot_simbol.svg" alt="dot-simbol">
+              <img src="/dot_simbol.svg" alt="dot-simbol">
             </div>
           </div>
         </div>
@@ -126,6 +126,7 @@ export default {
 .card_header {
   position: relative;
   padding: 20px 30px;
+  text-align: center;
 }
 
 .card_header:after {

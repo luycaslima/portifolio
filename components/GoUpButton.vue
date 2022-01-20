@@ -1,6 +1,6 @@
 <template>
   <button id="go-up-button" @click="GoUp()">
-    <img src="../assets/GoUp_button.svg" alt="go up image">
+    <img src="/GoUp_button.svg" alt="go up image">
   </button>
 </template>
 
