@@ -3,7 +3,6 @@
     e tornar a aba projects a HOME-->
   <!-- TODO Melhorar a animação ao menu fexar -->
   <!-- TODO Trocar o botao de menu do mobile para um x ao abrir -->
-  <!-- TODO migrar as imagens mais usadas para pasta static-->
   <nav class="topbar">
     <div id="mobile-menu-top-bar">
       <NuxtLink to="/">

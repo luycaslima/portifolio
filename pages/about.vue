@@ -35,7 +35,6 @@
 import Card from '../components/Card.vue'
 import Qualifications from '../components/Qualifications.vue'
 
-// TODO: Adaptar o grid da lista de jogos para as cartas no about
 export default {
   name: 'About',
   components: {
@@ -47,12 +46,16 @@ export default {
       frontEnd: {
         title: 'Front-end',
         image: '../assets/card_frontend_img.svg',
-        items: ['Html', 'CSS', 'Javascript', 'Vue.js', 'Nuxt.js']
+        items: ['Html/CSS', 'Javascript', 'Vue.js', 'Nuxt.js']
       },
-      ferramentas: { title: 'Ferramentas', items: ['Git', 'Scrum'] },
+      ferramentas: { title: 'Outros', items: ['Git', 'Scrum', 'Golang'] },
       gameDev: {
         title: 'Game-dev',
-        items: ['Unity', 'Godot', 'Rust', 'C++/SDL']
+        items: ['Unity', 'Godot', 'C/SDL']
+      },
+      mobile: {
+        title: 'Mobile',
+        items: ['Flutter', 'React Native']
       }
     }
   }
@@ -91,6 +94,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  zoom: 1.5;
 }
 
 @media only screen and (min-width: 840px) {
@@ -100,6 +104,7 @@ export default {
     margin: 20px auto;
     width: 100%;
     justify-content: space-between;
+    zoom: 1;
   }
   .name-description {
     border-style: solid;

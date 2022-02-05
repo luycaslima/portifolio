@@ -61,7 +61,6 @@ export default {
 </script>
 
 <style scoped>
-/* TODO tamanho dimanico */
 
 .card {
   width: 250px;
