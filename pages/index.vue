@@ -1,13 +1,9 @@
 <template>
-  <div class="page">
-    Teste
-  </div>
+  <Tutorial />
 </template>
 
 <script>
-
 export default {
-  name: 'IndexPage',
-  components: { }
+  name: 'IndexPage'
 }
 </script>

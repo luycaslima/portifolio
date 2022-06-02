@@ -1,15 +1,11 @@
 <template>
   <div>
-    <div />
+    Hi
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BlogMenu'
+  name: 'MainPage'
 }
 </script>
-
-<style>
-
-</style>

@@ -1,66 +1,25 @@
 <template>
-  <footer class="content">
-    <div class="media">
-      <client-only>
-        <table>
-          <tr>
-            <td><img id="line" src="/line.svg" alt="line"></td>
-          </tr>
-          <tr>
-            <div id="buttons">
-              <a href="https://www.instagram.com/luycaslima/" target="_blank"><img src="/social/inst.svg" alt="instagram"></a>
-              <a href="https://github.com/luycaslima" target="_blank"><img src="/social/github.svg" alt="github"></a>
-              <a href="https://github.com/luycaslima" target="_blank"><img src="/social/twit.svg" alt="twitter"></a>
-            </div>
-          </tr>
-        </table>
-      </client-only>
-    <!-- 2017 - 2020 Lucas Lima -->
+  <footer class="content m-0 p-0 bg-secondaryBG">
+    <div class="flex items-center justify-center p-8">
+      <img id="line" src="/line.svg" alt="line">
+    </div>
+    <div class="flex items-center justify-center">
+      <client-only />
+      <a href="https://www.instagram.com/luycaslima/" target="_blank" class="px-2.5"><img height="36" src="svgs/social/inst.svg" alt="instagram"></a>
+      <a href="https://www.linkedin.com/in/l22l/" target="_blank" class="px-2.5"><img width="36" height="36" src="svgs/social/linkedin.svg" alt="linkedin"></a>
+      <a href="https://github.com/luycaslima" target="_blank" class="px-2.5"><img width="36" height="36" src="svgs/social/github.svg" alt="github"></a>
+    </div>
+    <div class="text-center p-6 text-darkBG">
+      <span>© 2022 Lucas Lima.</span>  All Rights Reserved.
     </div>
   </footer>
 </template>
 
-<script>
-
-export default {
-  name: 'PageFooter',
-  components: {
-  }
-}
-</script>
-
-<style >
-#line {
-  justify-content: center;
-  margin: 20px 0px 20px 10px;
-}
-#buttons {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-#buttons a{
-  padding: 0 15px;
-}
-#buttons img{
-  display: block;
-  width: 110%;
-  height: 110%;
-}
+<style>
 .content {
-  background-image: url("../assets/background_footer_logo.svg");
+  background-image: url("~assets/background_footer_logo.svg");
   background-repeat: no-repeat;
   background-position: bottom left;
-  position: absolute;
-  padding: 10px 0px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
 }
-.media{
-  display: flex;
-  justify-content: center;
-}
+
 </style>

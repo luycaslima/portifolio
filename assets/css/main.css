@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-primary: #001021;
+    --color-secondary: #FE5F55;
+    --bg: #F7F7FF;
+    --secondary-bg: #BDD5EA;
+}
+
+* {
+    font-family: "Roboto Condensed", cursive;
+}
+
+h1,h2 {
+    font-family: "Righteous", cursive;
+}
+
+body {
+    background-color: var(--bg);
+}
