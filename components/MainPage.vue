@@ -1,17 +1,11 @@
 <template>
   <div>
-    teste
+    Hi
   </div>
 </template>
 
 <script>
-
-
-
 export default {
-  name: 'Projects',
-  components: {
-    
-  }
+  name: 'MainPage'
 }
 </script>
