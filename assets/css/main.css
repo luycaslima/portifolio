@@ -16,10 +16,14 @@
     font-family: 'Roboto Condensed', cursive;
 }
 
-h1,h2 {
+h1,h2,h4 {
     font-family: 'Righteous', cursive;
 }
 
+
 body {
     background-color: var(--bg);
+}
+li {
+    list-style-image: url('~@/assets/dot.svg');
 }

@@ -4,14 +4,14 @@
       <nuxt-link to="/">
         <img src="/home_btn.svg" alt="">
       </nuxt-link>
-      <div class="menu-options text-lg items-center justify-center flex">
-        <nuxt-link to="/" class="px-4 m-auto hover:text-secondary">
+      <div class="menu-options text-xl items-center justify-center flex">
+        <nuxt-link to="/" class="px-4 m-auto hover:text-secondary transition-color duration-200">
           WORKS
         </nuxt-link>
-        <nuxt-link to="/" class="px-4 m-auto hover:text-secondary">
+        <nuxt-link to="/" class="px-4 m-auto hover:text-secondary transition-color duration-200">
           BLOG
         </nuxt-link>
-        <!-- <button class="items-center rounded w-10 h-10 bg-terciary hover:bg-darkBG">
+        <!-- <button class="items-center rounded w-10 h-10 bg-terciary hover:bg-darkBG transition-color duration-200">
           <img src="/svgs/moon.svg" alt="" class="m-auto">
         </button> -->
       </div>
