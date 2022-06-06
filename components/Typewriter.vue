@@ -4,10 +4,10 @@
       <h4 class="tracking-widest">
         Hi, my name is
       </h4>
-      <span class="text-8xl text-secondary py-2">
+      <span class="text-8xl text-secondary py-2 tracking-wide">
         {{ displayText.join("") }}<span class="cursor">|</span>
       </span>
-      <h4 class="tracking-widest">
+      <h4 class="tracking-widest pt-2">
         Computer Scientist | Fullstack Developer
       </h4>
     </div>
@@ -92,7 +92,9 @@ export default {
 
 <style scoped>
 span {
-    font-family: 'Righteous', cursive;
+    font-family: 'Keania One', cursive;
+    -webkit-text-stroke: 4px ;
+    -webkit-text-stroke-color:#FE5F55;
 }
 
 @keyframes blink-animation {
@@ -108,6 +110,6 @@ span {
 }
 
 .typewriter{
-  min-height: 32vh;
+  min-height: 30vh;
 }
 </style>

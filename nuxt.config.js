@@ -41,7 +41,8 @@ export default {
   googleFonts: {
     families: {
       Righteous: [400],
-      'Roboto+Condensed': [300, 400, 700]
+      'Roboto+Condensed': [300, 400, 700],
+      'Keania+One': [400]
     }
   },
   // Modules: https://go.nuxtjs.dev/config-modules
