@@ -6,7 +6,7 @@
           Projects
         </h1>
       </div>
-      <img class="px-4 py-4 md:py-0 m-auto md:m-0" src="line.svg" alt="line">
+      <img class="px-4 py-4 md:py-0 m-auto md:m-0" src="~assets/line.svg" alt="line">
     </div>
     <div class="md:flex items-center justify-center ">
       <ProjectCard
