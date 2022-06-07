@@ -23,7 +23,7 @@
         <p class="text-xl pt-6 pb-2">
           Some of the technologies that I have been working with:
         </p>
-        <div class="grid grid-cols-2 gap-2 text-lg">
+        <div class="grid grid-cols-2 gap-2 text-lg ml-2">
           <div><li>Node.js</li></div>
           <div><li>Golang</li></div>
           <div><li>Vue.js</li></div>

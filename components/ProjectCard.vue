@@ -15,8 +15,8 @@
         <!--TODO Checar aqui se tem descrição se não tiver por o texto de busca de emprego -->
         {{ project.description }}
       </p>
-      <div v-if=" project.technologies[0] !== 'Tópicos'" class="text-xl sm:justify-center md:justify-start md:text-left text-center my-2 flex flex-row">
-        <li v-for="technology in project.technologies" :key="technology" class="pr-2">
+      <div v-if=" project.technologies[0] !== 'Tópicos'" class="text-xl justify-center md:justify-start md:text-left text-center my-2 flex flex-row">
+        <li v-for="technology in project.technologies" :key="technology" class="mr-3">
           {{ technology }}
         </li>
       </div>
@@ -41,12 +41,13 @@ export default {
           externalLink: '',
           technologies: ['Tópicos'],
           repository: '',
-          image: '' // TODO solucionar com isso https://blog.lichter.io/posts/dynamic-images-vue-nuxt/
+          image: ''
         }
       }
     }
   },
   computed: {
+    // https://blog.lichter.io/posts/dynamic-images-vue-nuxt/
     processImage () {
       if (!this.project.image) {
         return require('../assets/project_img_placeholder.svg')
