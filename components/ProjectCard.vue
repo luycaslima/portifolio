@@ -15,12 +15,10 @@
         <!--TODO Checar aqui se tem descrição se não tiver por o texto de busca de emprego -->
         {{ project.description }}
       </p>
-      <div v-if=" project.technologies[0] !== 'Tópicos'" class="text-xl justify-center md:justify-start md:text-left text-center my-2 ml-6 grid grid-cols-3 gap-2">
-        <div v-for="technology in project.technologies" :key="technology" class="mx-auto">
-          <li>
-            {{ technology }}
-          </li>
-        </div>
+      <div v-if=" project.technologies[0] !== 'Tópicos'" class="text-xl justify-center md:justify-start md:text-left text-center my-2 flex flex-row">
+        <li v-for="technology in project.technologies" :key="technology" class="mr-3">
+          {{ technology }}
+        </li>
       </div>
       <div class="flex flex-row justify-center md:justify-end">
         <a :href="project.repository" class=" max-w-fit pr-2 " target="_blank"><img src="~assets/github.svg" alt="github"></a>
