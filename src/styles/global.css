@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    @apply bg-ghostWhite;
+    @apply font-roboto;
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(theme(colors.ghostWhite), theme(colors.ghostWhite));
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease-in-out;
+}
+  
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(theme(colors.orangeRedCrayole), theme(colors.orangeRedCrayole));
+}
+  
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
+
+.stroke {
+    -webkit-text-stroke:6px;
+    -webkit-text-stroke-color: theme(colors.ghostWhite);
+}
