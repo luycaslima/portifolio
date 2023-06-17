@@ -1,8 +1,9 @@
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import { forwardRef } from "react";
 
-export default function Footer() {
+export const Footer =  forwardRef<HTMLElement>((_props,ref) => {
     return (
-        <footer className="m-0 p-0 bg-richBlackFogra text-ghostWhite">
+        <footer ref={ref} className="m-0 p-0 bg-richBlackFogra text-ghostWhite">
             
             <div className="flex items-center justify-center p-8">
                 <img id="line" src="/line.svg" alt="line" />
@@ -28,4 +29,4 @@ export default function Footer() {
             </div>
         </footer>
     )
-}
+})

@@ -1,13 +1,14 @@
-import SectionTitle from "../../../SectionTitle";
+import SectionTitle from "../SectionTitle";
 import ProjectCard from "./components/ProjectCard";
-import { data } from "../../../../data/ProjectData";
+import { data } from "../../data/ProjectData";
+import { forwardRef } from "react";
 
 
-export default function Projects() {
+export const Projects = forwardRef<HTMLElement>((_props,ref) => {
     let side = false; // use useState?
 
     return (
-        <section className="m-24">
+        <section ref={ref} className="m-24">
             <SectionTitle name="PROJECTS" />
             <div className="flex flex-col justify-center items-center gap-8">
                 {data.map(d => {
@@ -20,4 +21,4 @@ export default function Projects() {
             
         </section>
     )
-}
+})

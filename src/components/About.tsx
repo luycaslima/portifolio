@@ -1,8 +1,10 @@
-import SectionTitle from "../../SectionTitle";
+import { forwardRef } from "react";
+import SectionTitle from "./SectionTitle";
 
-export default function About() {
+
+export const About = forwardRef<HTMLElement>((_props,ref) => {
     return (
-        <section className=" flex flex-col justify-center items-center m-24">
+        <section ref={ref} className=" flex flex-col justify-center items-center m-24">
             <SectionTitle name="ABOUT"/>
             <div className="flex xl:flex-row flex-col justify-center items-center xl:gap-20">
                 <div className="relative flex items-center justify-center">
@@ -38,4 +40,4 @@ export default function About() {
             </div>
         </section>
     )
-}
+})

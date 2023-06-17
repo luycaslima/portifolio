@@ -1,5 +1,5 @@
-import { ProjectsDataProps } from "../../../../../data/ProjectData";
-import Window from "../../../../Window";
+import { ProjectsDataProps } from "../../../data/ProjectData";
+import Window from "../../Window";
 
 interface ProjectCardProp{
     projectDetails: ProjectsDataProps;

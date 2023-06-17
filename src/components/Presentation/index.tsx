@@ -1,10 +1,11 @@
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
-import Window from "../../../Window";
+import Window from "../Window";
+import { forwardRef } from "react";
 
-export default function Presentation() {
+export const Presentation = forwardRef<HTMLElement>((_props, ref) => {
     //TODO descobrir como puxar a cor do tailwind para o icone
     return (
-        <section className="xl:flex justify-center items-center xl:py-0 pt-8 gap-3 h-screen">
+        <section ref={ref} className="xl:flex justify-center items-center xl:py-0 pt-8 gap-3 h-screen">
             <div className="font-righteous text-xl min-w-3xl">
                 <p className="pb-1">
                     {'>'} Hi, my name is
@@ -35,4 +36,4 @@ export default function Presentation() {
             </div>
         </section>
     )
-}
+})
