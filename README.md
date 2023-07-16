@@ -8,5 +8,5 @@ My website for my portifolio. Created using vite+react+tailwindcss
 
 ## TODO
 
-- [ ] Mobile UX
+- [x] Mobile UX
 

@@ -5,11 +5,12 @@ import { forwardRef } from "react";
 
 
 export const Projects = forwardRef<HTMLElement>((_props,ref) => {
-    let side = false; // use useState?
+    let side = false; 
 
     return (
-        <section ref={ref} className="m-24">
+        <section ref={ref} className="my-24 mx-auto xl:m-24">
             <SectionTitle name="PROJECTS" />
+            {/* TODO explain some of my passions in games here */}
             <div className="flex flex-col justify-center items-center gap-8">
                 {data.map(d => {
                     side = !side;

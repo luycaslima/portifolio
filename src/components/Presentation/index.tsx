@@ -5,12 +5,12 @@ import { forwardRef } from "react";
 export const Presentation = forwardRef<HTMLElement>((_props, ref) => {
     //TODO descobrir como puxar a cor do tailwind para o icone
     return (
-        <section ref={ref} className="xl:flex justify-center items-center xl:py-0 pt-8 gap-3 h-screen">
-            <div className="font-righteous text-xl min-w-3xl">
+        <section ref={ref} className="xl:flex justify-center items-center xl:py-0 pt-8 gap-8 md:h-screen m-12 sm:mx-auto sm: my-0">
+            <div className="font-righteous mx-auto text-xl flex flex-col justify-center items-center xl:block text-center md:text-left">
                 <p className="pb-1">
                     {'>'} Hi, my name is
                 </p>
-                <div className="font-russo-one text-orangeRedCrayole text-8xl select-none">
+                <div className="font-russo-one text-orangeRedCrayole text-5xl md:text-7xl select-none">
                     {'>'} Lucas Lima_
                 </div>
                 <p className="pt-1">
@@ -28,10 +28,10 @@ export const Presentation = forwardRef<HTMLElement>((_props, ref) => {
                     </a>
                 </div>
             </div>
-            <div className="m-16 xl:m-0 relative flex items-center justify-center">
-                <Window type="image" width={330} className="absolute z-1 inset-x-24 top-4" imagePath="gifs/eating_ramen.gif" />
-                <Window type="image" width={330}  className="absolute z-2 right-2 bottom-24 w-80" imagePath="gifs/eating_ramen.gif" />
-                <Window type="image" width={370}  className="absolute z-3 left-2 bottom-4 w-80" imagePath="gifs/idol_jade.gif" />
+            <div className="m-8 xl:m-0 relative flex items-center justify-center">
+                <Window type="image" width={330} className="absolute z-1 inset-x-18 sm:inset-x-24 top-2 w-7/12 sm:w-2/3" imagePath="gifs/eating_ramen.gif" />
+                <Window type="image" width={330}  className="absolute z-2 right-2 bottom-12 sm:bottom-24 sm:w-80 w-1/2 " imagePath="gifs/eating_ramen.gif" />
+                <Window type="image" width={370}  className="absolute z-3 left-2 bottom-4 sm:w-80 w-1/2 " imagePath="gifs/idol_jade.gif" />
                 <img src="/black_circle.svg" alt="circle" />
             </div>
         </section>

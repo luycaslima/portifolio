@@ -18,9 +18,14 @@ module.exports = {
         'keania-one': ['Keania One','cursive']
       },
       animation: {
+        fade: 'fade 2s ease-in-out linear ',
         'reverse-spin': 'reverse-spin 5.5s linear infinite'
       },
       keyframes: {
+        fade: {
+          '0%': { opacity: 0 },
+          '100%': {opacity: 1}
+        },
         'reverse-spin': {
           from: {
             transform: 'rotate(-360deg)'
