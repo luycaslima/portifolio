@@ -4,7 +4,6 @@ import { forwardRef } from "react";
 export const Footer =  forwardRef<HTMLElement>((_props,ref) => {
     return (
         <footer ref={ref} className="m-0 p-0 bg-richBlackFogra text-ghostWhite">
-            
             <div className="flex items-center justify-center p-8">
                 <img id="line" src="/line.svg" alt="line" />
             </div>

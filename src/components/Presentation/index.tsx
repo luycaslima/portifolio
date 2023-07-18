@@ -5,8 +5,8 @@ import { forwardRef } from "react";
 export const Presentation = forwardRef<HTMLElement>((_props, ref) => {
     //TODO descobrir como puxar a cor do tailwind para o icone
     return (
-        <section ref={ref} className="xl:flex justify-center items-center xl:py-0 pt-8 gap-8 md:h-screen m-12 sm:mx-auto sm: my-0">
-            <div className="font-righteous mx-auto text-xl flex flex-col justify-center items-center xl:block text-center md:text-left">
+        <section ref={ref} className="xl:flex justify-center items-center xl:py-0 xl:pt-8 gap-8 md:h-screen m-12 mx-auto sm:my-0">
+            <div className="font-righteous mx-0 text-xl flex flex-col justify-center items-center xl:block text-center md:text-left">
                 <p className="pb-1">
                     {'>'} Hi, my name is
                 </p>
@@ -17,7 +17,7 @@ export const Presentation = forwardRef<HTMLElement>((_props, ref) => {
                     {'>'} Computer Scientist / Front-end Developer
                 </p>
                 <span className="text-orangeRedCrayole text-3xl select-none">
-                    {'>>>>>>>>>>>>>>>>>>>>>>>>>>>>'}
+                    {'>>>>>>>>>>>>>>>>>>>>>>>>>'}
                 </span>
                 <div className="flex pt-2 gap-3">
                     <a href="https://www.linkedin.com/in/l22l/" target="_blank" rel='noreferrer'>

@@ -27,28 +27,28 @@ export default function Header({scrollTo,home,about,projects,contact} : HeaderPr
                 <nav className={`${open ? 'block' : 'hidden'} text-xl lg:items-center lg:flex lg:w-auto w-full font-righteous`}>
                     <ul className="lg:flex lg:justify-between">
                         <li>
-                            <button onClick={() => { scrollTo(home) }}  className="mx-4 transition-color hover:text-orangeRedCrayole duration-200 ">
+                            <button onClick={() => { scrollTo(home); setOpen(!open); }}  className="mx-4 transition-color hover:text-orangeRedCrayole duration-200 ">
                                 <span className="link link-underline link-underline-black">
                                     HOME
                                 </span>
                             </button>
                         </li>
                         <li>
-                            <button onClick={() => { scrollTo(about) }} className="mx-4 hover:text-orangeRedCrayole transition-color duration-200 ">
+                            <button onClick={() => { scrollTo(about); setOpen(!open); }} className="mx-4 hover:text-orangeRedCrayole transition-color duration-200 ">
                                 <span className="link link-underline link-underline-black">
                                     ABOUT
                                 </span> 
                             </button>
                         </li>
                         <li>
-                            <button onClick={() => { scrollTo(projects) }}  className="mx-4 hover:text-orangeRedCrayole transition-color duration-200">
+                            <button onClick={() => { scrollTo(projects); setOpen(!open); }}  className="mx-4 hover:text-orangeRedCrayole transition-color duration-200">
                                 <span className="link link-underline link-underline-black">
                                     PROJECTS
                                 </span>
                             </button>
                         </li>
                         <li>
-                            <button onClick={() => { scrollTo(contact) }}  className="mx-4 hover:text-orangeRedCrayole transition-color duration-200">
+                            <button onClick={() => { scrollTo(contact); setOpen(!open); }}  className="mx-4 hover:text-orangeRedCrayole transition-color duration-200">
                                 <span className="link link-underline link-underline-black">
                                     CONTACT
                                 </span>

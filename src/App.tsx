@@ -12,8 +12,9 @@ export default function App() {
   const contact = useRef(null);
   
   const handleScrollToSection = (elementRef: RefObject<HTMLElement>) => {
+    if(!elementRef.current) return;
     window.scrollTo({
-        top: elementRef.current?.offsetTop,
+        top: elementRef.current.offsetTop - 72,
         behavior: 'smooth'
     })
   }
