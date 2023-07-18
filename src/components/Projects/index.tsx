@@ -8,7 +8,7 @@ export const Projects = forwardRef<HTMLElement>((_props,ref) => {
     let side = false; 
 
     return (
-        <section ref={ref} className="my-12 mx-auto xl:m-24">
+        <section ref={ref} className="animate-fade-in-page my-12 mx-auto xl:m-24">
             <SectionTitle name="PROJECTS" />
             {/* TODO explain some of my passions in games here */}
             <div className="flex flex-col justify-center items-center gap-8">

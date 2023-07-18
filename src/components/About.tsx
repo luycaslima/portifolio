@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 export const About = forwardRef<HTMLElement>((_props,ref) => {
     return (
-        <section ref={ref} className="my-12 mx-auto xl:m-24">
+        <section ref={ref} className=" animate-fade-in-page my-12 mx-auto xl:m-24">
             <SectionTitle name="ABOUT"/>
             <div className="flex justify-center items-center flex-col md:flex-row gap-2">
                 <div className="mx-auto  relative flex items-center justify-center w-2/3 md:w-full">
