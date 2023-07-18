@@ -12,12 +12,12 @@ export default function ProjectCard( {projectDetails, isInverse} : ProjectCardPr
             {
                 isInverse ? <div className="flex xl:flex-row justify-center items-center gap-24">
                     <Window type="projects" width={410}  details={projectDetails} />
-                    <div className=" md:h-[340px] md:w-[410px] bg-slate-400 rounded-xl lg:block hidden">
+                    <div className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
                          {/*<img className="w-full" src={props.imageLink} alt="" />*/}
                     </div>
                 </div> : 
                     <div className="flex xl:flex-row justify-center items-center gap-24">
-                        <div className=" md:h-[340px] md:w-[410px] bg-slate-400 rounded-xl lg:block hidden">
+                        <div className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
                              {/*<img className="w-full" src={props.imageLink} alt="" />*/}
                         </div>
                         <Window type="projects" width={410}  details={projectDetails} />

@@ -29,7 +29,7 @@ export const Presentation = forwardRef<HTMLElement>((_props, ref) => {
                 </div>
             </div>
             <div className="m-8 xl:m-0 relative flex items-center justify-center">
-                <Window type="image" width={330} className="absolute z-1 inset-x-18 sm:inset-x-24 top-2 w-7/12 sm:w-2/3" imagePath="gifs/eating_ramen.gif" />
+                <Window type="image" width={330} className=" absolute z-1 inset-x-18 sm:inset-x-24 top-2 w-7/12 sm:w-2/3" imagePath="gifs/eating_ramen.gif" />
                 <Window type="image" width={330}  className="absolute z-2 right-2 bottom-12 sm:bottom-24 sm:w-80 w-1/2 " imagePath="gifs/eating_ramen.gif" />
                 <Window type="image" width={370}  className="absolute z-3 left-2 bottom-4 sm:w-80 w-1/2 " imagePath="gifs/idol_jade.gif" />
                 <img src="/black_circle.svg" alt="circle" />

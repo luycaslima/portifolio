@@ -15,7 +15,7 @@ export const About = forwardRef<HTMLElement>((_props,ref) => {
                     </div>
                     <img src="/profile_pic.svg" alt="profile pic" />
                 </div>
-                <div className="flex flex-col justify-center mx-auto items-center text-center xl:text-start w-4/5 xl:max-w-screen-sm">
+                <div className="flex flex-col justify-center mx-auto items-center text-center md:text-start w-4/5 xl:max-w-screen-sm">
                      <div className="font-righteous">
                         <h2 className="text-3xl py-2">
                             A flexible, dedicated Developer based in Wuppertal, Germany.
