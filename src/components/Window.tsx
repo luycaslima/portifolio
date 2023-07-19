@@ -2,7 +2,7 @@ import { ArrowSquareOut, GithubLogo } from "@phosphor-icons/react";
 import { ProjectsDataProps } from "../data/ProjectData";
 
 interface WindowGeneral {
-    width: number;
+    width?: number;
 }
 
 interface WindowImageProps  extends React.HtmlHTMLAttributes<HTMLDivElement>, WindowGeneral{

@@ -14,7 +14,7 @@ export default function App() {
   const handleScrollToSection = (elementRef: RefObject<HTMLElement>) => {
     if(!elementRef.current) return;
     window.scrollTo({
-        top: elementRef.current.offsetTop - 144,
+        top: elementRef.current.offsetTop,
         behavior: 'smooth'
     })
   }

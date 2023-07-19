@@ -11,7 +11,7 @@ export default function ProjectCard( {projectDetails, isInverse} : ProjectCardPr
          <>
             {
                 isInverse ? <div className="flex xl:flex-row justify-center items-center gap-24">
-                    <Window type="projects" width={410}  details={projectDetails} />
+                    <Window type="projects" className="w-[300px] sm:w-[410px]" details={projectDetails} />
                     <div className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
                          {/*<img className="w-full" src={props.imageLink} alt="" />*/}
                     </div>
@@ -20,7 +20,7 @@ export default function ProjectCard( {projectDetails, isInverse} : ProjectCardPr
                         <div className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
                              {/*<img className="w-full" src={props.imageLink} alt="" />*/}
                         </div>
-                        <Window type="projects" width={410}  details={projectDetails} />
+                        <Window type="projects" className="w-[300px] sm:w-[410px]" details={projectDetails} />
                     </div>
             }
            
