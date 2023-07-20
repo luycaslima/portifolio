@@ -29,7 +29,8 @@ export default function App() {
   return (
     <>
       <Header home={home} about={about} projects={projects} contact={contact} scrollTo={handleScrollToSection}/>
-      <main className="m-auto flex flex-col items-center justify-center">
+      {/*This overflow-hidden is to AOS package not make a white space on the left*/}
+      <main className="overflow-hidden m-auto flex flex-col items-center justify-center">
         <Presentation ref={home} />
         <About ref={about} />
         <Projects ref={projects} />

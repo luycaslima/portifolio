@@ -6,12 +6,15 @@ html,body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    
 }
 
+.aos-init:not(.aos-animate):after {position: fixed;}
 
 body {
     @apply bg-ghostWhite;
     @apply font-roboto;
+    
 }
 
 .link-underline {

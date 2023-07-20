@@ -18,7 +18,7 @@ export default function Header({scrollTo,home,about,projects,contact} : HeaderPr
     }
     
     return (
-        <header className="animate-fade-in m-auto sticky bg-ghostWhite/30 backdrop-blur-sm top-0 z-50 h-{80} p-4  ">
+        <header className=" animate-fade-in m-auto sticky bg-ghostWhite/30 backdrop-blur-sm top-0 z-50 h-{80} p-4  ">
             <div className="max-w-screen-lg m-auto flex flex-wrap items-center justify-between">
                 <div >
                     <button onClick={() => { scrollTo(home) }} >
