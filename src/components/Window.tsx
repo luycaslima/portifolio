@@ -3,6 +3,8 @@ import { ProjectsDataProps } from "../data/ProjectData";
 
 interface WindowGeneral {
     width?: number;
+    animationType : 'fade-down' | 'fade-left' | 'fade-right' | 'zoom-in-down';
+    delay: number;
 }
 
 interface WindowImageProps  extends React.HtmlHTMLAttributes<HTMLDivElement>, WindowGeneral{
@@ -19,7 +21,7 @@ interface ProjectDetailsProps extends React.HtmlHTMLAttributes<HTMLDivElement>, 
 
 export default function Window(props : WindowImageProps | ProjectDetailsProps  ) {
     return (
-        <div className={`w-[${props.width}px] ${props.className}`}>
+        <div data-aos={props.animationType} data-aos-duration={props.delay.toString()} className={`w-[${props.width}px] ${props.className}`}>
             <header className="flex justify-end items-center px-2 bg-orangeRedCrayole h-7 border-2 rounded-t-lg border-richBlackFogra">
                 <img className="max-h-[16px]" src="/window_options.svg" alt="window options" />
             </header>
@@ -41,12 +43,12 @@ function ImageWindow(imagePath : string) {
 
 function ProjectDetailsWindow({title,description,technologies,linkGithub, linkDemo} : ProjectsDataProps) {
     return (
-        <div className="flex flex-col justify-between items-center text-center h-full p-4">
-            <h2 className="font-righteous text-3xl">{title}</h2>
+        <div className="flex flex-col justify-between items-center text-center h-full ">
+            <h2 className="mx-9 mt-2 font-righteous text-3xl">{title}</h2>
             
-            <p className=" px-9 py-4 text-center text-xl">{description}</p>
+            <p className=" mx-9 py-1 md:py-4 text-center text-xl">{description}</p>
             
-            <div className="flex m-3 gap-3 font-bold">
+            <div className="flex m-3 md:gap-3 font-bold flex-col md:flex-row">
                 {technologies.map( (t ) => {
                     return (
                         <span key={t.toString()} >{t}</span>
@@ -54,7 +56,7 @@ function ProjectDetailsWindow({title,description,technologies,linkGithub, linkDe
                 })}
             </div>
             
-            <div className="flex flex-row justify-center items-center gap-4 font-bold">
+            <div className="flex flex-row justify-center items-center gap-4 font-bold my-3">
                 {linkDemo &&
                     <a className="flex justify-center items-center" href={linkDemo} target="_blank" rel="noreferrer">
                 {/*TODO  What is norefferer? */}

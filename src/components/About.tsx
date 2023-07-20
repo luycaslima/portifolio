@@ -7,7 +7,7 @@ export const About = forwardRef<HTMLElement>((_props,ref) => {
         <section ref={ref} className=" animate-fade-in-page my-12 mx-auto xl:m-24">
             <SectionTitle name="ABOUT"/>
             <div className="flex justify-center items-center flex-col md:flex-row gap-2">
-                <div className="mx-auto  relative flex items-center justify-center w-2/3 md:w-full">
+                <div data-aos='zoom' className="mx-auto relative flex items-center justify-center w-2/3 md:w-full">
                     <img className="absolute animate-reverse-spin " src="/white_square.svg" alt="white square" />
                     <div className="absolute leading-[5rem]  md:leading-[7rem] text-ghostWhite text-8xl sm:text:7xl md:text-9xl font-keania-one stroke max-h-full">
                         <h1 className="select-none">L2</h1>
@@ -15,7 +15,7 @@ export const About = forwardRef<HTMLElement>((_props,ref) => {
                     </div>
                     <img src="/profile_pic.svg" alt="profile pic" />
                 </div>
-                <div className="flex flex-col justify-center mx-auto items-center text-center md:text-start w-4/5 xl:max-w-screen-sm">
+                <div data-aos='fade-left' className="flex flex-col justify-center mx-auto items-center text-center md:text-start w-4/5 xl:max-w-screen-sm">
                      <div className="font-righteous">
                         <h2 className="text-3xl py-2">
                             A flexible, dedicated Developer based in Wuppertal, Germany.

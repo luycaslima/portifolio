@@ -11,16 +11,29 @@ export default function ProjectCard( {projectDetails, isInverse} : ProjectCardPr
          <>
             {
                 isInverse ? <div className="flex xl:flex-row justify-center items-center gap-24">
-                    <Window type="projects" className="w-[300px] sm:w-[410px]" details={projectDetails} />
-                    <div className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
-                         {/*<img className="w-full" src={props.imageLink} alt="" />*/}
-                    </div>
+                    <Window animationType="fade-right"  delay={0} type="projects" className="w-[300px] sm:w-[410px]" details={projectDetails} />
+                    { projectDetails.imageLink ? 
+                        <div data-aos="fade-left" className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
+                            <img className="object-cover rounded-xl " src={projectDetails.imageLink} />
+                        </div>
+                        : 
+                        <div data-aos="fade-left" className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
+                        </div>
+                    }
                 </div> : 
                     <div className="flex xl:flex-row justify-center items-center gap-24">
-                        <div className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
-                             {/*<img className="w-full" src={props.imageLink} alt="" />*/}
+                    { projectDetails.imageLink ? 
+                        <div data-aos="fade-right" className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden"> 
+                            
                         </div>
-                        <Window type="projects" className="w-[300px] sm:w-[410px]" details={projectDetails} />
+                        :
+                        <div data-aos="fade-right" className=" h-[340px] w-[410px] bg-slate-400 rounded-xl lg:block hidden">
+                            <img className="w-full" src={projectDetails.imageLink} />   
+                        </div>
+                        
+                    }
+                        
+                        <Window animationType="fade-left"  delay={0}  type="projects" className="w-[300px] sm:w-[410px]" details={projectDetails} />
                     </div>
             }
            
